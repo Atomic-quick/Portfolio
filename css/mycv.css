@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: bisque;
+}
+img{
+    height: 0.1vh;
+}
+main{
+    width: 700px;
+    background: white;
+}
+:root{
+    --line: rgb(134, 104, 54);
+}
+.firstsection{
+    padding: 20px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:15px;
+}
+.secondsection{
+    padding: 20px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-gap:25px;
+    grid-template-columns: 1fr 1fr;
+}
+.myimg{
+    height: 230px;
+    border: 2px solid var(--line);
+}
+.contact img{
+    height: 22px;
+    padding-right: 10px;
+}
+hr{
+    /* border:0; */
+    background: var(--line);
+    /* height: 3px; */
+    /* margin: 40px 80px; */
+}
+h2{
+    color: var(--line);
+    margin: 10px 0;
+}
+.fr h4{
+    /* background: red; */
+    margin: 5px 0;
+}
+.fr h5{
+    /* background: red; */
+    margin: 5px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.secfr h3{
+    /* background: green; */
+    margin: 5px 0;
+}
+.secfr h4{
+    /* background: green; */
+    margin: 6px 0;
+}
+.secfr h5{
+    /* background: red; */
+    margin: 4px 0;
+    /* font-size: 0.7em; */
+    font-family: 'Roboto', sans-serif;
+}
+.contact{
+    margin: 10px 0;
+}
+.secondsection h5{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 1px;
+}

@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    background: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    /* z-index: -1; */
+    transition: 1s;
+    background-image: none;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,aqua);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,red);
+    border-radius: 6px;
+}
+/* navbar */
+nav{
+    background-color: rgb(38, 38, 38);
+    height: 85px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: 1s;
+}
+
+
+.left ul{
+    z-index: 20;
+    float: unset;
+    list-style: none;
+    margin-right: 100px;
+    position: relative;
+    z-index: 1;
+}
+.left ul li{
+    float: left;
+    display: inline-block;
+    background: rgb(38, 38, 38);
+    margin: 0px 5px;
+}
+.left ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.left ul li a:hover{
+    box-shadow: 0 0 5px aqua;
+    border-radius: 15px;
+    color: aqua;
+}
+.left ul ul{
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.4s;
+}
+.left ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.left ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 200px;
+    float: none;
+    display: list-item;
+    /* border-bottom: 1px solid aqua; */
+}
+.left ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 200px;
+}
+.right{
+    float: left;
+    font-size: 1.6rem;
+    color: white;
+    margin: 20px 50px 10px 50px;
+}
+
+
+.bi-toggle-on{
+    font-size: 35px;
+    position: absolute;
+    right: 0.5em;
+    top: 0.3em;
+}
+.bi-toggle-off{
+    filter: invert();
+    font-size: 35px;
+    position: absolute;
+    right: 0.5em;
+    top: 0.3em;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+#active{
+    color: aqua;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* CSS */
+.button-57 {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    background-color: #555;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    position: relative;
+    z-index: 10;
+    color: white;
+}
+
+.button-57 span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 65%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+.button-57:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+.button-57:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 9px;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+    text-align: center;
+    background-color: rgb(38, 38, 38);
+}
+
+@media screen and (max-width:1050px){
+    nav{
+        height: 20vw;
+    }
+    .listhide{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: rgb(38, 38, 38);
+    right: 0;
+    flex-direction: column;
+    transition: top 2s ease;
+    }
+    .left ul{
+        float: left;
+        margin: 0px;
+    }
+    .left ul li a{
+        font-size: 2.585vw;
+        line-height: 2.8em;
+        padding: 0.5em 0.5em;
+    }
+    .left ul li{
+        margin: 0px 0.7vw;
+    }
+    .left ul li a:hover{
+        padding: 0.5vw 2.05vw;
+    }
+    .left ul li:hover > ul{
+        top: 8.5vw;
+    }
+    .left ul ul li{
+        width: 35vw;
+    }
+    .left ul ul ul li{
+        left: 35vw;
+    }
+    footer{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:650px){
+    nav{
+        height: 23vw;
+    }
+}
+@media screen and (max-width:450px){
+    nav{
+        height: 27vw;
+    }
+    .right{
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+}
+@media screen and (max-width:300px){
+    nav{
+        height: 36vw;
+    }
+}

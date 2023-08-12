@@ -1,0 +1,484 @@
+
+
+/* utility */
+
+.aditya{
+    color: aqua;
+    text-shadow: 0px 0px 10px aqua;
+}
+h2{
+    font-size: 2.2rem;
+    text-align: center;
+}
+h5{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.button a{
+    margin: 10px;
+}
+.cursor{
+    position: fixed;
+    /* width: 20px;
+    height: 20px; */
+    border-radius: 50%;
+    background: white;
+    transition: 0.05s;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+div:hover ~ .cursor
+{
+    width: 20px;
+    height: 20px;
+    transform: scale(3);
+}
+span:hover ~ .cursor
+{
+    width: 20px;
+    height: 20px;
+    transform: scale(3);
+}
+.leftsec div:hover{
+    cursor: none;
+}
+.cursor2{
+    position: fixed;
+    /* width: 20px;
+    height: 20px; */
+    border-radius: 50%;
+    background: white;
+    transition: 0.05s;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+div:hover ~ .cursor2
+{
+    width: 20px;
+    height: 20px;
+    transform: scale(3);
+}
+.sec2 div:hover{
+    cursor: none;
+}
+
+/* main  */
+
+.firstsec{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25vh 10vh;
+    /* margin: 220px 60px 120px 60px; */
+    /* height: 400px; */
+    z-index: -3;
+}
+.firstsec > div{
+    width: 45%;
+}
+.leftsec{
+    margin: 20px;
+    font-size: 3vw;
+}
+.rightsec{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.myimgbg{
+    background: black;
+    border-radius: 50%;
+}
+#rightsec img{
+    position: relative;
+    height: 350px;
+    z-index: 1;
+    transition: all 1s ease-in;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.myimg{
+    margin: 1vw;
+    padding: 1vw;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.myimg::before{
+    content: '';
+    position: absolute;
+    width: 15vw;
+    height: 90vh;
+}
+.myimg::before{
+    background: linear-gradient(
+    180deg,
+    #1affffc1,
+    #00ffd5);
+    animation: animate 4s linear infinite;
+}
+.myimg::after{
+    content: '';
+    position: absolute;
+    background: black;
+    inset: 6px;
+    border-radius: 50%;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    overflow: hidden;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* main hr{
+    border:0;
+    background: grey;
+    height: 1.2px;
+    margin: 40px 80px;
+} */
+
+
+
+
+
+/* //experience section */
+.sec2{
+    max-width: 90vw;
+    margin: auto;
+    height: 120vh;
+}
+.sec2 h1{
+    font-size: 2rem;
+}
+.sec2 .box{
+    background: aqua;
+    width: 91vw;
+    height: 2px;
+    margin: 80px 0;
+    display: flex;
+}
+.sec2 .verbox{
+    width: 2px;
+    background: aqua;
+    height: 6vh;
+    margin: 0 8.8vw;
+}
+.imgtop{
+    height:  10vh;
+    position: relative;
+    top: -10.2vh;
+    left: -6.4vh;
+}
+.vertitle{
+    position: relative;
+    top: -4vh;
+    width: 15vw;
+    font-size: 3.4vh;
+}
+.verdes{
+    position: relative;
+    margin: 1vw;
+    top: -5vh;
+    width: 11vw;
+    font-size: 2vh;
+}
+.verdes p{
+    margin: 0px 0px 16px 8px;
+}
+.manager{
+    color: yellow;
+    text-shadow: 0px 0px 10px yellow;
+}
+.admin{
+    color: aqua;
+    text-shadow: 0px 0px 10px aqua;
+}
+.analyst{
+    color: greenyellow;
+    text-shadow: 0px 0px 10px greenyellow;
+}
+.observer{
+    color: red;
+    text-shadow: 0px 0px 10px red;
+}
+
+
+/* game section  */
+
+#games-section{
+    position: relative;
+    /* height: 300px; */
+    background-color: rgba(0, 0, 0, 0.495);
+}
+#games-section .workbox{
+    padding: 3vw 3vw;
+}
+#games-section::before{
+    content: "";
+    background: url('../images/BGS/BG5.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#games{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    /* background: black; */
+}
+#games img{
+    height: 4vw;
+    padding: 5px;
+    z-index: 2;
+    transition: all 1s ease-in;
+}
+
+.games-item{
+    margin: 1vw;
+    padding: 1vw;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.games-item::before{
+    content: '';
+    position: absolute;
+    width: 12vw;
+    height: 25vh;
+}
+.games-item:hover::before{
+    background: linear-gradient(
+    45deg,
+    #00ffd5,
+    #ff00c8);
+    animation: animate 4s linear infinite;
+}
+.games-item:hover::after{
+    background: white;
+    border-radius: 16px;
+}
+.games-item:hover{
+    transform: scale(1.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.games-item::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.6px);
+    -webkit-backdrop-filter: blur(2.6px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.button-73 {
+    min-width: 170px;
+  appearance: none;
+  background-color: black;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: aqua 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: aqua;
+  box-shadow: black 0 -6px 8px inset;
+  transform: scale(1.125);
+  color: black;
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+.linkbutton{
+    color: #ff00c8;
+}
+
+@media screen and (max-width:1050px){
+    .firstsec > div {
+        width: 80%;
+    }
+    .firstsec{
+        flex-direction: column-reverse;
+        margin: 12vw 4vw;
+        margin-top: 40vw;
+        align-items: center;
+    }
+    .rightsec{
+        width: 40vw;
+        height: 40vw;
+        margin: 6vw;
+    }
+    #rightsec img{
+        height: 45vw;
+    }
+    .leftsec{
+        margin: 4vw;
+        font-size: 6vw;
+    }
+    .button-73 {
+        min-width: 50px;
+        font-size: 5vw;
+        padding: .8rem;
+        box-shadow: aqua 0 -8px 4px inset;
+    }
+    .button a{
+        margin: 5px;
+    }
+    .img-box h4,.img-box{
+        width: 36vw;
+        height: 20vh;
+    }
+    .gallery{
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(auto-fit, minmax(40vw,1fr));
+    }
+    .container{
+        height: 100%;
+    }
+    .sec2 .box{
+        flex-direction: column;
+    }
+    .sec2 .verbox{
+        height: 42vh;
+        margin: 0 12vw;
+    }
+    .sec2{
+        height: 230vh;
+    }
+    .imgtop{
+        height: 14vw;
+        top: 10vw;
+        left: -7.5vw;
+    }
+    .vertitle{
+        left: 12vw;
+        width: 65vw;
+        font-size: 4.4vw;
+    }
+    .verdes{
+        margin: 13vw;
+        top: -15vw;
+        width: 53vw;
+        font-size: 2.3vw;
+    }
+    #games{
+        margin: 1vw;
+        margin-bottom: 0;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(130px,1fr));
+    }
+    #games img{
+        height: 5vh;
+    }
+    .games-item{
+        padding: 1.5vh 5vh;
+    }
+    .games-item:hover{
+        transform: scale(1.2);
+    }
+    div:hover ~ .cursor{
+    width: 0;
+    height: 0;
+    }
+    span:hover ~ .cursor{
+    width: 0;
+    height: 0;
+    }
+    div:hover ~ .cursor2{
+    width: 0;
+    height: 0;
+    }
+}
+@media screen and (max-width:900px){
+    .sec2 .verbox{
+        height: 45vh;
+        margin: 0 12vw;
+    }
+    .sec2{
+        height: 245vh;
+    }
+}
+@media screen and (max-width:770px){
+    .sec2 .verbox{
+        height: 50vh;
+        margin: 0 10vw;
+    }
+    .sec2{
+        height: 275vh;
+    }
+}
+
+@media screen and (max-width:415px){
+    .sec2 .verbox{
+        height: 35vh;
+        margin: 0 12vw;
+    }
+    .sec2{
+        height: 205vh;
+    }
+}
+@media screen and (max-width:375px){
+    #games{
+        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    }
+}
+
+img{
+    height: 0.1vh;
+}
+
+

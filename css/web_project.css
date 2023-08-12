@@ -1,0 +1,164 @@
+img{
+    height: 0.1vh;
+}
+
+
+/* main  */
+.secsec{
+    margin: 100px 10px 10px 10px;
+    /* height: 1000px; */
+    text-align: center;
+}
+.head{
+    font-size: 20px;
+    color: grey;
+}
+.tail{
+    padding: 5px 5px 30px 5px;
+    font-size: 35px;
+    border-bottom: 3px solid aqua;
+}
+.note{
+    font-size: 10px;
+    color: grey;
+}
+.title{
+    margin: auto;
+    max-width: 33em;
+}
+a{
+    color: gray;
+    text-decoration: none;
+    text-shadow: 0 0 15px gray;
+}
+.pro{
+    max-width: 30em;
+    padding-top: 2em;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.pro div{
+    padding: 1.5em;
+    border-radius: 1em;
+}
+.pro:nth-child(odd){
+    border-left: 3px solid aqua;
+    padding-left: 3em;
+    transform: translateX(16.4em);
+}
+.pro:nth-child(even){
+    border-right: 3px solid aqua;
+    padding-right: 3em;
+    transform: translateX(-16.4em);
+}
+.pro img{
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 0.6em;
+    cursor: pointer;
+    overflow: hidden;
+}
+.pro:hover img{
+    display: block;
+}
+
+
+/* 1st option on esports projects */
+
+/* 2ns option  */
+
+.pro div{
+    border: 2px solid aqua;
+}
+.pro:nth-child(even)::before , .pro:nth-child(odd)::before{
+    content: '';
+    background: aqua;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pro:nth-child(odd)::before{
+    left: 0;
+}
+.pro:nth-child(even)::before{
+    right: 0;
+}
+.pro:nth-child(even) div::before , .pro:nth-child(odd) div::before{
+    content: '';
+    background: aqua;
+    box-shadow: 0 0 0.5em aqua;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.pro:nth-child(odd) div::before{
+    left: -0.5em;
+}
+.pro:nth-child(even) div::before{
+    right: -0.5em;
+}
+
+.title:nth-child(odd) .des{
+    transform: translateX(100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.title:nth-child(odd) .des2{
+    transform: translateX(-100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.title:nth-child(odd) .show{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.title:nth-child(odd) .show2{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+@media screen and (max-width:1150px){
+    .secsec{
+    margin-top: 33vw;
+    }
+    .navbar{
+        width: 100vw;
+    }
+    .title .pro{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .title .pro::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .title .pro div::before{
+        top: -0.5em;
+        left:50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width:300px){
+    .secsec{
+    margin-top: 41vw;
+    }
+}
