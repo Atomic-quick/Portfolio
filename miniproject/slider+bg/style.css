@@ -1,0 +1,170 @@
+#backgroundContainer {
+    will-change: transform;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    background-size: cover;
+    filter: blur(2.5px); /* Adjust the blur amount as needed */
+    z-index: -1;
+    /* transition: 0.05s; */
+}
+img{
+  height: 0.1vh;
+}
+body{
+        background-color: black;
+}
+.mySlides {
+    display: none
+}
+/* image section */
+section{
+    color: white;
+}
+.sec2{
+    font-size: 20px;
+}
+#background{
+    margin: 2vw;
+}
+h2{
+    text-align: center;
+}
+.slideshow-container {
+    position: relative;
+    /* margin: auto; */
+    width: 100%;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: aqua;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .img-box{
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+  }
+  /* Caption text */
+  .text {
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -48px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  
+  /* The dots/bullets/indicators */
+  .box-box{
+      position: relative;
+      bottom: 58px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+.img-box:nth-child(1){
+    background: url(../../images/BGS/BG1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(2){
+    background: url(../../images/BGS/BG2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(../../images/BGS/BG3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(../../images/BGS/BG4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(5){
+    background: url(../../images/BGS/BG5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(6){
+    background: url(../../images/BGS/BG6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* CSS */
+.button-33 {
+  background-color: #9cfff85e;
+  border-radius: 100px;
+  box-shadow: rgba(103, 246, 249, 0.068) 0 -25px 18px -14px inset,rgba(175, 255, 254, 0.15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: aqua;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

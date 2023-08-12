@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: skyblue;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* navbar  */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2em;
+    color: aquamarine;
+    pointer-events: none;
+    margin-right: 25vw;
+}
+.navbar a{
+    text-decoration: none;
+    color: aquamarine;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navbar a:hover, 
+.navbar a.active{
+    background: aquamarine;
+    color: white;
+}
+
+
+/* parallax  */
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+#text{
+    position: absolute;
+    font-size: 5.3vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.sec{
+    padding: 50px;
+    position: relative;
+    background: #003329;
+    color: white;
+}
+.sec h2{
+    font-size: 5vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.cloud{
+    animation: animate calc(8s * var(--i)) linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform:  translateX(-100%);
+    }
+    100%{
+        transform:  translateX(100%);
+    }
+}
+
+@media screen and (max-width:1050px){
+    .parallax{
+        height: 56vw;
+    }
+    header{
+        padding: 3px 20px;
+    }
+    .logo{
+        font-size: 2em;
+        margin-right: 5vw;
+    }
+    .navbar a{
+        font-size: 0.7em;
+        padding: 5px;
+        margin: 0 2px;
+    }
+}
