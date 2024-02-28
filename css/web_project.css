@@ -25,6 +25,8 @@ img{
 .title{
     margin: auto;
     max-width: 33em;
+    display: flex;
+    flex-direction: column-reverse;
 }
 a{
     color: gray;

@@ -21,6 +21,8 @@ img{
 .title{
     margin: auto;
     max-width: 33em;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .aditya{
     color: aqua;
