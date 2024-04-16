@@ -1,0 +1,66 @@
+
+section{
+    margin-top: 86px;
+}
+
+
+
+.grid-container {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(16vw,1fr));
+    background-color: #000000;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+.ytp-large-play-button svg {
+    height: 15vw !important;
+}
+
+blockquote.div,.instagram-media,.instagram-media-registered,iframe{
+    max-width: 250px !important;
+    max-height: 360px;
+    min-width: 10px !important;
+}
+.HoverCard,.HoverCardRoot,.PrimaryCTA,.Feedback{
+    display: none !important;
+    padding: 0px !important;
+}
+.HoverCard {
+    position: relative !important;
+    display: none !important;
+}
+
+@media screen and (max-width:1150px){
+    section{
+    margin-top: 27vw;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(24vw,1fr));
+    }
+    blockquote.div,.instagram-media,.instagram-media-registered,iframe{
+        max-width: 30vw !important;
+        max-height: 45vw;
+        min-width: 5px !important;
+    }
+    .ytp-large-play-button svg {
+        height: 40% !important;
+    }
+}
+@media screen and (max-width:300px){
+    section{
+    margin-top: 37vw ;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(26vw,1fr));
+    }
+    blockquote.div,.instagram-media,.instagram-media-registered,iframe{
+        max-width: 40vw !important;
+        max-height: 60vw;
+        min-width: 5px !important;
+    }
+    .ytp-large-play-button svg {
+        height: 40% !important;
+    }
+}

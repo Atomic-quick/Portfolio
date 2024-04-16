@@ -282,6 +282,10 @@ p{
     animation: anicir2 2s linear forwards;
     animation-delay: .5s;
 }
+.skills-box2 .progress:nth-child(3) svg circle:nth-child(2){
+    animation: anicir3 2s linear forwards;
+    animation-delay: .5s;
+}
 @keyframes anicir {
     100% {
         /* stroke-dashoffset: calc(440 - (440 * var(--per) / 100)) */
@@ -291,6 +295,11 @@ p{
 @keyframes anicir2 {
     100% { 
         stroke-dashoffset: 176; 
+    }
+}
+@keyframes anicir3 {
+    100% { 
+        stroke-dashoffset: 352; 
     }
 }
 .dot{
