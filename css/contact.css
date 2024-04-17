@@ -152,7 +152,7 @@ conta{
     transition: 0.8s;
     /* display: none; */
     /* transform: rotateY(180deg); */
-    transform: translatex(-1500px);
+    transform: translatex(-2000px);
     width: 40vw;
     height: 65vh;
     overflow: hidden;
