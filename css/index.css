@@ -161,7 +161,7 @@ div:hover ~ .cursor2
 .sec2{
     max-width: 90vw;
     margin: auto;
-    height: 100vh;
+    height: 105vh;
 }
 .sec2 h1{
     font-size: 2rem;
@@ -461,7 +461,7 @@ div:hover ~ .cursor2
         height: 275vh;
     }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:530px){
     .sec2 .verbox{
         height: 50vh;
         margin: 0 10vw;
